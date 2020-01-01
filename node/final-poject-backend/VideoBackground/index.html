@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dolphin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id="nav-wrapper">
+        <nav>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Blog</li>
+                <li><a href="#"></a>Contact</li>
+            </ul>
+
+        </nav>
+    </div>
+    
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video src="Dolphin.mp4" autoplay="true" loop="true"></video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content" >
+            <h1>Hello Everyone</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste, obcaecati nostrum molestias ex ab nemo labore laudantium qui culpa delectus facilis quod, non cupiditate sed animi autem unde assumenda.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </header>
+    <section class="section section-a">
+        <div class="container">
+        <h1>section A</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem consequuntur quo. Unde sed nulla ea neque vel ratione, quae, voluptatibus mollitia ut laudantium similique veritatis ducimus. Error exercitationem magni dolore quos cupiditate et, vitae distinctio velit quisquam tenetur neque amet maiores aut aperiam laboriosam ipsam soluta ullam vero quidem.</p>
+    </div>
+    </section>
+    <section class="section section-b">
+            <div class="container">
+            <h1>section B</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorem consequuntur quo. Unde sed nulla ea neque vel ratione, quae, voluptatibus mollitia ut laudantium similique veritatis ducimus. Error exercitationem magni dolore quos cupiditate et, vitae distinctio velit quisquam tenetur neque amet maiores aut aperiam laboriosam ipsam soluta ullam vero quidem.</p>
+        </div>
+        </section>
+    
+</body>
+</html>

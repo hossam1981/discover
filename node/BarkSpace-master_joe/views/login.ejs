@@ -1,0 +1,112 @@
+
+    
+
+    <link href="/css/signin_register.css" rel="stylesheet" />
+
+
+
+    
+
+    <h3 style="color:red;"><%= errMsg %></h3>
+
+
+
+
+    <div id="main">
+    <form action="\login" method="post">
+      <table border="0" cellspacing="10">
+          <tr>
+              <td>
+                  <div id="title">SIGN IN</div>
+                  <hr size="1px" width="100px" color="black"/>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="text" name="username" placeholder="USER ID"/>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="password" name="password" placeholder="PASSWORD"/>
+              </td>
+          </tr>
+          <!-- <tr>
+              <td align="right">
+                  <div id="frt">FORGOT PASSWORD</div>
+              </td>
+          </tr> -->
+          <tr>
+              <td align="center">
+                  <input type="submit" value="SIGN IN" id="signInBtn"/>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                  <div id="signUpMsg">DON'T HAVE AN ACCOUNT? <a href="#" id="flipToSignUp">SIGN UP</a></div>
+              </td>
+          </tr>
+      </table>
+    </form>
+  </div>
+  
+  <div id="signUpForm">
+      <form action="/register" method="post">
+      <table border="0" cellspacing="10">
+          <tr>
+              <td>
+                  <div id="title">SIGN UP</div>
+                  <hr size="1px" width="100px" color="black"/>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="text" name="fname" placeholder=" NAME"/>
+              </td>
+          </tr>
+          <tr>
+               <td>
+                  <input type="text" name="lname" placeholder="SURNAME"/>
+                  </td>
+              </tr>
+              <tr>
+                   <td>
+                       <input type="text" name="username" placeholder="USERNAME"/>
+                      </td>
+                  </tr>   
+          <tr>
+              <td>
+                  <input type="email" name="email" placeholder="EMAIL ID"/>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <input type="password" name="password" placeholder="PASSWORD"/>
+              </td>
+          </tr>
+          <tr>
+             <td>
+                 <input type="password" name="password2" placeholder="PASSWORD"/>
+                  </td>
+              </tr>
+
+
+          <tr>
+              <td align="center">
+                  <input type="submit" value="SIGN UP" id="signUpBtn"/>
+              </td>
+          </tr>
+          <tr>
+              <td align="center">
+                  <div id="signInMsg">HAVE AN ACCOUNT <a href="#" id="flipToSignIn">SIGN IN</a></div>
+              </td>
+          </tr>
+      </table>
+    </form>
+  </div>
+
+  
+  <script src="/scripts/jquery-1.10.2.min.js"></script>
+  <script src="/scripts/signin_register.js"></script>
+
+

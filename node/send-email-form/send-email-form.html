@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>send-email-form</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto" rel="stylesheet">
+
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./form.js"></script>
+
+    
+</head>
+<body>
+
+   
+        <section id="contact">
+                <div class="container">
+                    <div class="section-title">
+                        <h1>Contact <span class="accent-text">Me</span></h1>
+                    </div>
+                    
+                    <div class="row center-xs center-sm center-md center-lg">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="contact-info">
+                                
+                                <div class="contact-block">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <div class="contact-text">
+                                        <p>Call</p>
+                                        <p>347-206-0083</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-block">
+                                    <i class="far fa-envelope"></i>
+                                    <div class="contact-text">
+                                        <p>Email</p>
+                                        <p>hossam.elnaggar.ny@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-block">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="contact-text">
+                                        <p>Address</p>
+                                        <p>New York, NY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                            <form id="contact-form" onsubmit="submitForm(); return false;">
+
+        <!-- <form action="https://formspree.io/spiderdash4u@gmail.com" method="POST">        -->
+                                <div class="field">
+                                    Name<br>
+                                    <input type="text" id="name" placeholder="Name" required>
+                                </div>
+                                <div class="field">
+                                    Email<br>
+                                    <input type="text" id="email" placeholder="email@gmail.com" required>
+                                </div>
+                                <div class="field">
+                                    Subject<br>
+                                    <input type="text" id="subject" placeholder="Your subject" required>
+                                </div>
+                                <div class="field">
+                                    Message<br>
+                                    <textarea id="message" rows="10" cols="75" placeholder="The cat was playing in the garden." required></textarea>
+                                </div>
+
+                                <div class="field">
+                                    <input type="submit" id="contact-submit" value="Submit Form"><span id="status"></span>
+                                </div>
+
+                                
+                            </form>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+
+
+    
+</body>
+</html>

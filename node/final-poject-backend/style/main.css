@@ -1,0 +1,227 @@
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+   font-weight: 300;
+  
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    /* background-image: url('./picture/temple_egy.jpg'); */
+    /* min-height: 100%; */
+    background-repeat: repeat;
+
+       /* joe fix this */
+}
+@media (min-width: 900px) {
+    .fullscreen-video-wrap {
+        height: 100%;
+    }
+ 
+    .bgimg-1 {  
+        overflow:hidden;
+    }
+   }
+
+
+   
+/* Second image (parallax) */
+.bgimg-2 {  
+    background-image: url("../picture/egy_desert.jpg");
+    min-height: 400px;
+}
+
+/* Third image (parallax-Contact) */
+.bgimg-3 {
+    background-image: url("../picture/temple_egy.jpg");
+    min-height: 400px;
+}
+/* fourth image (parallax-Contact) */
+.bgimg-4 {
+    background-image: url("../picture/pyramids.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+/* --------------------------- */
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+    transition: 1.5s;
+}
+
+a.icon{
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 27px;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+    text-decoration-line: none;
+    color: black;
+    
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+/* not sure u could try to delete and see the different */
+div{ 
+    display: block;
+}
+.intro-narrative__heading::after {
+    border-bottom: 2px solid #dc221a;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: 47%;
+    /* position: absolute; */
+    width: 5rem;
+    padding-bottom: 15px;
+}
+h1.welcome{
+  font-family:Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+   /* "Raleway", sans-serif; */
+  font-weight: 300;
+  width: 95%;
+  margin: 30px;
+
+}
+/* style the card */
+.box-hidden{
+    display: none;
+}
+
+img.card-img-top{
+    width: 336px;
+    height: 190px;
+}
+
+
+.card-body{padding-top: 5px}
+.card {
+    /* text-align: center!important; */
+    display: inline-block;
+    margin:4px;
+    width: 336px;
+    height: 390px;
+}
+.card-title {
+    background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.85));
+    bottom: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 20px;
+    /* margin: 0; */
+    margin: 0px -19px 198px;
+    padding: 16px;
+    position: absolute;
+    width: 100%;
+}
+
+.card:hover{
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+p.card-text {
+    text-align:  left;
+}
+
+#loadMore {
+    margin: 20PX;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #33739E;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+}
+#loadMore:hover {
+    background-color: #33739E;
+    color: #fafafa;
+}
+a.icon:hover{
+    color:#33739E;
+}
+
+/* end of card styling */
+/* overlay text over background video */
+/* .bgimg-1{
+    position:relative;
+    z-index:0;
+}
+
+h1.discover{
+        position: absolute; 
+        top: 100px; 
+        color: #FFF; 
+        text-align: center;
+        font-size: 20px;
+        background-color: rgba(221, 221, 221, 0.3);
+        width: 640px;
+        padding: 10px 0;
+        z-index: 2147483647;    
+} */
+/* end of overlay */
+
+/* video control */
+#mute{
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border: 1px solid #000;
+  background-size: cover;
+  background-image: url("http://image.flaticon.com/icons/svg/10/10776.svg");
+}
+#play{
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 110px;
+  right: 50px;
+  border: 1px solid #000;
+  background-size: cover;
+}
+
+/* End of video control */

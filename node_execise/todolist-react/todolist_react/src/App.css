@@ -1,0 +1,40 @@
+body {
+  background: #9266ff;
+}
+.App{
+  background-color: #3f3160;
+  min-height:500px;
+  width: 400px;
+  margin: 40px auto;
+}
+
+#to-do-form {
+  margin: auto50px;
+}
+#to-do-form input[type=text]{
+  background: rgb(27, 112, 137);
+  color:white;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#to-do-form input[type=text]::-moz-placeholder{
+  background: rgba(255, 255, 255, .5);
+}
+#to-do-form input,button:focus{
+  outline: none;
+}
+#to-do-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  background: rgb(202, 156, 24);
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}

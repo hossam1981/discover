@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+                <% include ./header %>
+            </header>
+            <form method="POST" action="/order">
+                <label>Username: </label>  <input type="text" name="username" placeholder="Enter username" value="<%= username %>">
+                <br>
+                <br>
+                <label>Shoes</label>
+                <select id="shoes" name="shoes">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                
+                <br>
+                <label>Bags</label>
+                <select id="bags" name="bags">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br>
+                <label>Pants</label>
+                <select id="pants" name="pants">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br>
+                <label>T-Shirts</label>
+                <select id="tshirts" name="tshirts">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <br>
+                <br>
+                <button>Order</button>
+        <div id="lastorder">
+            <p id="history">Order history</p>
+            <% if (date !== "") { %>
+            <p>Your last order on <%= date %> was:</p>
+            <% } %>
+            <% if (shoes !== 0) { %>
+            <label>Shoes</label> <label><%= shoes %></label><br>
+            <% } %>
+            <% if (bags !== 0) { %>
+            <label>Bags </label>  <label><%= bags %></label><br>
+            <% } %>
+            <% if (pants !== 0) { %>
+            <label>Pants</label> <label><%= pants %></label><br>
+            <% } %>
+            <% if (tshirts !== 0) { %>
+            <label>T-Shirts</label>  <label><%= tshirts %></label><br>
+            <% } %>
+        </div>
+        </form>
+        <footer>
+            <% include footer %>
+        </footer>
+    
+</body>
+</html>

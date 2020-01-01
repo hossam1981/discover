@@ -1,0 +1,48 @@
+body{
+  background-color:beige;
+  text-align: center;
+  color: red;
+  
+  
+}
+nav{
+  padding: 5px;
+  background-color: black;
+}
+li{
+  display: inline-block;
+  margin:5px;
+}
+li a{
+  color:rgb(29, 214, 13);
+  text-decoration: none;
+
+  border: solid #1f628d 2px;
+  padding: 15px 32px;
+  text-align: center;
+
+}
+
+  li:hover{
+    background-color: orange;
+
+  }
+  ul{
+    
+    padding: 10;
+    margin: 25;
+  }
+
+
+/* .container{
+  padding: 100px
+  
+}
+p{
+  color: blueviolet;
+}
+nav{
+  padding: 10px;
+  background-color: aqua;
+  color:black
+} */

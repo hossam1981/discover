@@ -1,0 +1,20 @@
+[
+    {
+    "name":"Dara Khosrowshahi",
+    "image": "http://static1.tinn.ir/thumbnail/5WZjapkpOiUd/U7Ccvlt33jkVulWZAuOVqo9SYBPVqZG2wJfTjh-vy7DDVSZN8IEX4Zd7jkGxwBqLJ5jM-fGYwhs1w24HZ1koLPEoK41D1ONJ/Uber-DaraKhosrowshahi.jpg",
+    "job":"CEO of Uber",
+    "born": "May 28, 1969 (age 48)"
+    },
+    {
+    "name":"Mark Zuckerberg",
+    "image": "https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2017/12/13/10/facebook-mark-zuckerberg.jpg",
+    "job": "CEO of Facebook",
+    "born": "May 14, 1984 (age 33)"
+    },
+    {
+    "name":"Reed Hastings",
+    "image":"https://i.pinimg.com/736x/d7/6c/80/d76c80ea6ff4275d0bab42957f59f248--reed-hastings-online-video.jpg",
+    "job": "CEO of Netflix",
+    "born": "October 8, 1960 (age 57)"
+    }
+]

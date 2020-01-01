@@ -1,0 +1,23 @@
+.carousel-inner .active.left {
+    left: -33%;
+  }
+  .carousel-inner .next {
+    left: 33%;
+  }
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+  }
+
+
+
+  .slide-container {
+    overflow: auto;
+    white-space: nowrap;
+    width: 300;
+    height: 300;
+  }
+  div img{
+    width: 300;
+    height: 300;
+  }
+  

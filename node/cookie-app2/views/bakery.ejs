@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+   
+    <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    </style>
+    <title>Bakery</title>
+</head>
+<body>
+        <div class="w3-content w3-container w3-padding-64" >
+    <h1 class="w3-center"> Cookie Confectionary</h1>
+
+<form method="POST" action="/sugar">
+<button>Sugar</button><span> <%= sugar %> </span>
+</form><br>
+
+ <form method="POST" action="/chocolate">
+    <button>Chocolate</button><span> <%= chocolate %> </span>
+    </form><br>
+
+    <form method="POST" action="/lemon">
+        <button>Lemon</button><span> <%= lemon %> </span> 
+        </form><br>
+
+        <form method="POST" action="/feel-guilty">
+    
+        <button class="button" style="vertical-align:middle"><span>Start Again </span></button></form>
+</div>
+
+</body>
+</html>

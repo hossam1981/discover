@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"> <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    
+    <title>Shoes Inventory</title>
+    <style>
+ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+fieldset {
+    background: #fafafa;
+    text-transform: uppercase;
+    margin: 22px 334px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    padding: 25px 115px;
+}
+div {
+    display: inherit;
+}
+th {
+    height: 50px;
+    background: silver;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin: 0 198px 97px;
+}
+.add-btn {
+    margin: 0 198px 97px;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
+form {
+    display: inline;
+    margin-right: auto;
+}
+.search{
+    float: right;
+    margin-right:165px; 
+}
+
+            </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="w3-center">paymore ino.| Shoes</h1><br>
+    <h2  class="w3-center">Inventory</h2>
+    
+    <a href="./add-shoes.html">
+
+        <button class="add-btn w3-button w3-black w3-center w3-section"> <i class="btn-add fa fa-plus-square-o"></i> Add shoes </button>
+    </a>
+<!-- add a search  -->
+
+<div class="search">
+<form method="GET" action="/search"><input type="text" name="search" placeholder="Search" id="search-input"><button><i class="fa fa-search"></i></button></form>      </div>
+
+ <p><%= message %></p>
+
+
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>Material</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Qty</th>
+                <th colspan="2">Action</th>
+            </tr>
+
+            <% for (let i in rows) { %>
+                <tr>
+                    <td><%= rows[i].dataValues.id %></td>
+                    <td><%= rows[i].dataValues.name %></td>
+                    <td><%= rows[i].dataValues.material %></td>
+                    <td><%= rows[i].dataValues.size %></td>
+                    <td><%= rows[i].dataValues.color %></td>
+                    <td><%= rows[i].dataValues.qty %></td>
+
+                    <td>
+
+
+                        <form method='GET' action='/edit/shoe/
+                        rows[i].dataValues.id'>
+                           
+                                <button class="btn-edit">
+                                    edit
+                                </button>
+                           
+                        </form>
+</td>
+                    <td>    <form method='POST' action='/delete/shoe/
+                        rows[i].dataValues.id'>
+                        
+                                <button class="btn-delete">
+                                    delete
+                                </button>
+                            
+                        </form>
+
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+    <!-- </form> -->
+</div>
+
+</body>
+</html>
