@@ -1,0 +1,53 @@
+{
+  "name": "web-starter-template",
+  "version": "0.1.0",
+  "description": "The Web Starter Template (WST) is a starting point for creating Front End Web applications.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {},
+  "scripts": {
+    "globals": "npm i -g cross-env",
+    "servers": "cross-env NODE_ENV=development&&gulp watch",
+    "dev-server": "cross-env NODE_ENV=development&&gulp dev_server",
+    "node-server": "cross-env NODE_ENV=development&&nodemon server/app.js",
+    "prod": "cross-env NODE_ENV=production&&gulp prod",
+    "dev-tests": "cross-env NODE_ENV=development&&gulp tests",
+    "image-min": "cross-env NODE_ENV=development&&gulp images",
+    "sass": "cross-env NODE_ENV=development&&gulp sass",
+    "third-party": "cross-env NODE_ENV=development&&gulp vendor"
+  },
+  "keywords": [
+    "Web",
+    "Front",
+    "End",
+    "Template"
+  ],
+  "author": "Shaun Hinchy",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "7.0.0-beta.34",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-preset-react": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-git": "^2.5.0",
+    "gulp-imagemin": "4.0.0",
+    "gulp-mustache": "3.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.1",
+    "nodemon": "^1.14.7",
+    "puppeteer": "*",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "uglify-js": "3.2.2",
+    "webpack": "3.10.0",
+    "webpack-stream": "4.0.0"
+  }
+}
